@@ -1,0 +1,67 @@
+#wrap{
+	background-color: #545649;
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+header h1{
+	background-color: yellow;
+	text-align: right;
+	margin: 0;
+}
+
+#content ul{
+	text-align: center;
+	list-style-type: none;
+}
+
+#content p{
+	margin:0;
+    padding: 0;
+}
+
+footer p{
+	background-color: green;
+}
+
+nav {
+	background-color: green;
+
+}
+
+aside {
+	background-color: white;
+	float: right;
+}
+
+nav ul {
+    list-style-type: none;
+/*    margin: 0;*/
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+	border: solid green;
+}
+
+nav li {
+	display: inline;
+	background-color: black;
+	border: 10px solid black;
+}
+
+nav li a {
+	color: white;
+
+}
+
+nav li a:link {
+    text-decoration: none;
+}
+
+body {
+	background-color: grey;
+}
