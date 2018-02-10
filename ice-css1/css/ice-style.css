@@ -24,6 +24,7 @@ header h1{
 
 footer p{
 	background-color: green;
+	margin: 0;
 }
 
 nav {
