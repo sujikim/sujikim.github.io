@@ -3,7 +3,7 @@
 	width: 80%;
 	margin: 0 auto;
 	position: relative;
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 
 header h1{
@@ -20,6 +20,11 @@ header h1{
 #content p{
 	margin:0;
     padding: 0;
+    size: 200px;
+}
+
+#content h1{
+	margin: 0;
 }
 
 footer p{
@@ -29,13 +34,23 @@ footer p{
 
 nav {
 	background-color: green;
+	padding: 0px;
 
 }
 
 aside {
 	background-color: white;
 	float: right;
+	width: 200px;
+	height: 458px;
 }
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 
 nav ul {
     list-style-type: none;
@@ -46,6 +61,8 @@ nav ul {
 
 nav {
 	border: solid green;
+/*	margin: 0;
+	padding: 0;*/
 }
 
 nav li {
@@ -66,3 +83,15 @@ nav li a:link {
 body {
 	background-color: grey;
 }
+
+p.copyright {
+	padding: 20px;
+	border: 20px;
+}
+
+aside h2 {
+	font-size: 30px;
+	margin: 0;
+
+}
+
