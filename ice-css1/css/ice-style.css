@@ -32,48 +32,51 @@ footer p{
 	margin: 0;
 }
 
-nav {
-	background-color: green;
-	padding: 0px;
-
-}
 
 aside {
 	background-color: white;
+
 	float: right;
-	width: 200px;
-	height: 458px;
-	overflow: hidden;
+	width: 20%;
+	height: 415px;
+
+
 }
 
 img {
-	display: block;
 	width: 100%;
-	height: auto;
+/*	height: 100%;*/
+/*	align-content: bottom;*/
+/*	box-sizing: border-box;*/
 }
+
+
+nav {
+	border: 19px solid green;
+	overflow: hidden;
+}
+
 
 
 nav ul {
-    list-style-type: none;
-/*    margin: 0;*/
-    padding: 0;
+    position: absolute;
+    top: 21px;
     text-align: center;
-}
+    align-content: bottom;
 
-nav {
-	border: solid green;
-/*	margin: 0;
-	padding: 0;*/
 }
 
 nav li {
-	display: inline;
+	list-style-type: none;
+	display: inline-block;
+	width: 140px;
 	background-color: black;
 	border: 10px solid black;
 }
 
 nav li a {
 	color: white;
+	text-align: center;
 
 }
 
@@ -93,6 +96,11 @@ p.copyright {
 aside h2 {
 	font-size: 30px;
 	margin: 0;
+
+}
+
+footer {
+	display: block;
 
 }
 
