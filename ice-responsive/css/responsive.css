@@ -1,4 +1,68 @@
+
 @media screen and (min-width:650px){
-	.top-nav ul{ 
-		display: block;}
+	.top-nav ul li{ 
+		display: inline-block;
+		margin-right: -5px;}
+	.top-nav ul {
+		text-align: center;}
+	.top-nav ul li, .menu-icon{
+		border-top: 1px solid #F54320; }
+	header {
+		position: absolute;
+		z-index: 2;}
+	.home-flag {
+		position: relative;
+		bottom: 170px;
+		z-index: 1;}
+
+
+	.photo-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		height: auto;
+
 	}
+	photo-cell.yellow-img {
+		grid-column-start: 1;
+		grid-row-start: 2;
+	}
+
+	.black-photo-cell {
+		display: none;
+	}
+
+	img.green-img {
+		display: none;
+	}
+
+	img.light-blue-img {
+		display: none;
+	}
+	img.red-img {
+		display: none;
+	}
+
+	section {
+	background-color: #DDDDDA;}	
+
+	section.crafts {
+		position: absolute;
+		top: -200px;
+	}
+}
+
+
+}
+
+
+/*@media screen and (min-width:1000px){
+	body {
+		background: green;}
+	.top-nav ul li{ 
+		display: inline-block;}
+	.top-nav ul {
+		text-align: right;}
+	.logo {
+		float: left;}
+	}
+*/
