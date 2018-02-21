@@ -85,7 +85,7 @@ header{
 .top-nav ul{
 	list-style-type: none;
 	padding: 0;
-	background-color: #211D24; /*CHANGE*/
+	background-color: black; /*CHANGE*/
 	margin: 0;
 	display: block;
 }
@@ -198,5 +198,9 @@ footer p{
   	display: block;
   	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
 }
+@media screen and (min-width:650px){
+	.top-nav ul{ 
+		display: inline-block;}
+	}
 
 
