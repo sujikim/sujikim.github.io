@@ -19,7 +19,7 @@
 		z-index: 2;}
 	.home-flag {
 		position: relative;
-		bottom: 200px;
+		bottom: 170px;
 		z-index: 1;}
 
 	.crafts {
@@ -127,4 +127,3 @@
 		grid-row: 3 / span 1;}
 	}
 
-	
