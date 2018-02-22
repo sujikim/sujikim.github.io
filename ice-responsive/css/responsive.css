@@ -1,10 +1,17 @@
+/* ***************** STEP 2 ******************/
 
 @media screen and (min-width:650px){
+
+	#top-nav {
+		border:  ;
+	}
 	.top-nav ul li{ 
 		display: inline-block;
 		margin-right: -5px;}
 	.top-nav ul {
-		text-align: center;}
+		text-align: center;
+		position: relative;
+		bottom: 8px;}
 	.top-nav ul li, .menu-icon{
 		border-top: 1px solid #F54320; }
 	header {
@@ -12,57 +19,96 @@
 		z-index: 2;}
 	.home-flag {
 		position: relative;
-		bottom: 170px;
+		bottom: 120px;
 		z-index: 1;}
 
-
-	.photo-grid {
+/*	.photo-cell.resp-img {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		height: auto;
+		grid-template-rows: 2fr 1fr ;
+		height:auto ;
+		width: 100%;
+	}*/
 
+	.crafts {
+		position: relative;
+		bottom: 100px;
 	}
-	photo-cell.yellow-img {
-		grid-column-start: 1;
-		grid-row-start: 2;
-	}
-
-	.black-photo-cell {
-		display: none;
-	}
-
-	img.green-img {
-		display: none;
-	}
-
-	img.light-blue-img {
-		display: none;
-	}
-	img.red-img {
-		display: none;
+	.photo-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
 	}
 
-	section {
-	background-color: #DDDDDA;}	
 
-	section.crafts {
-		position: absolute;
-		top: -200px;
+	div.maroon {
+		grid-column: 1/5;
+		grid-row: 1 / 2 ;
 	}
-}
+	div.yellow {
+		grid-column: 1 / span 2;
+/*		grid-row: 1fr;*/
+	}
+	div.bluish-purple {
+		grid-column: 3 / span 2;
+		display: absolute;
+		bottom: 200px;
+		grid-row: 1fr;
 
+	}
 
-}
+	div.black {
+		grid-row: 4 / 5;
+	}
 
+	div.green {
+		display: 4 / 5;
+	}
+	div.light-blue {
+		display: 4 / 5;
+	}
+	div.red {
+		display: 4 / 5;
+	}
+	}
 
-/*@media screen and (min-width:1000px){
-	body {
-		background: green;}
+/* ***************** STEP 3 ******************/
+
+@media screen and (min-width:1000px){
 	.top-nav ul li{ 
-		display: inline-block;}
-	.top-nav ul {
-		text-align: right;}
-	.logo {
-		float: left;}
+	display: inline;
+	float: left;
 	}
-*/
+	.top-nav ul {
+		text-align: right;
+		float: right;
+		position: relative;
+		bottom: 12px;
+		right: 15px;
+	}
+	.logo img {
+		float: left;
+	}
+	.top-nav ul li, .menu-icon{
+		border-top: 1px solid #211D24; }
+}
+	
+	header, footer, .logo {
+		border: 10px solid #211D24;}
+
+	.logo img{
+		height: 4em;
+		position: relative;
+		bottom: 8px;
+}
+
+
+	.photo-grid{
+		display: grid;
+		grid-template-columns:repeat(4, 1fr);
+	}
+
+	.box{
+		grid-column: span 2;
+	}
+
