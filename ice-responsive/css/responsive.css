@@ -102,14 +102,45 @@
 		bottom: 8px;
 }
 
-
-	.photo-grid{
+	.photo-grid {
 		display: grid;
-		grid-template-columns:repeat(4, 1fr);
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
 	}
 
-	.box{
-		grid-column: span 2;
+	div.black {
+		grid-column: 1 / span 4;
+		grid-row: 1 / 2;
+	}
+
+	div.maroon {
+		grid-column: 5 / span 4;
+		grid-row: 1 / 2 ;
+	}
+	div.yellow {
+		grid-column: 1 / span 2;
+/*		grid-row: 1fr;*/
+	}
+	div.bluish-purple {
+		grid-column: 3 / span 2;
+		display: absolute;
+		bottom: 200px;
+		grid-row: 1fr;
+
+	}
+
+	div.green {
+		grid-column: 5 / span 4;
+		grid-row: 1fr;
+	}
+	div.light-blue {
+		grid-column: 1 / span 4;
+		grid-row: 3 / span 1;
+	}
+	div.red {
+		grid-column: 5 / span 4;
+		grid-row: 3 / span 1;
+	}
 	}
 
 /*adding a comment to see if git is working*/
