@@ -22,14 +22,6 @@
 		bottom: 120px;
 		z-index: 1;}
 
-/*	.photo-cell.resp-img {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 2fr 1fr ;
-		height:auto ;
-		width: 100%;
-	}*/
-
 	.crafts {
 		position: relative;
 		bottom: 175px;
@@ -91,7 +83,6 @@
 	}
 	.top-nav ul li, .menu-icon{
 		border-top: 1px solid #211D24; }
-}
 	
 	header, footer, .logo {
 		border: 10px solid #211D24;}
@@ -99,8 +90,7 @@
 	.logo img{
 		height: 4em;
 		position: relative;
-		bottom: 8px;
-}
+		bottom: 8px;}
 
 	.photo-grid {
 		display: grid;
@@ -119,28 +109,22 @@
 	}
 	div.yellow {
 		grid-column: 1 / span 2;
-/*		grid-row: 1fr;*/
 	}
 	div.bluish-purple {
 		grid-column: 3 / span 2;
 		display: absolute;
 		bottom: 200px;
-		grid-row: 1fr;
-
-	}
+		grid-row: 1fr;}
 
 	div.green {
 		grid-column: 5 / span 4;
-		grid-row: 1fr;
-	}
+		grid-row: 1fr;}
 	div.light-blue {
 		grid-column: 1 / span 4;
-		grid-row: 3 / span 1;
-	}
+		grid-row: 3 / span 1;}
 	div.red {
 		grid-column: 5 / span 4;
-		grid-row: 3 / span 1;
-	}
+		grid-row: 3 / span 1;}
 	}
 
 /*adding a comment to see if git is working*/
