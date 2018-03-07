@@ -5,7 +5,19 @@
 	<title>Challenge 3</title>
     <script type="text/javascript">
     function checkForm(){
+    var isRadio1Checked = document.getElementById("opt-straw").checked;
+    var isRadio2Checked = document.getElementById("opt-blue").checked;
+
+    if( ( !isRadio1Checked && !isRadio2Checked ) || ( isRadio1Checked && isRadio2Checked ) ) {
+      return false; //prevents form to be submitted
+    } 
+    else {
+      console.log("Success!")
+      return true;
+    }
+  
     	// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
+      // writing a validation for the radio button -suji
 		} 
     </script>
 <!--       don't need to change anything-suji -->
@@ -27,6 +39,24 @@
       </div>
   </fieldset>
   <input type="submit" value="Pick your fruit!">
+
+  <script>
+    // var radios = document.querySelectorAll( "input[type='radio']" );
+    // radios.forEach( function(elem) {
+    //   elem.setAttribute("name", "fruits");
+    // }) ; 
+// both is a for loop
+    // for (var i= 0; i < radios.lenth; i++) {
+    //   radios[i].setAttribute("name", "fruits");
+    // }
+    // var isChecked = false;
+    // radios.forEach(function (elem) {
+    //   if (elem.checked) {
+    //     isChecked = true;
+    //   }
+    // });
+
+  </script>
 </form>
 </body>
 </html>
