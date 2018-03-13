@@ -37,19 +37,50 @@
 	}
 	</style>
 
-	<script type="text/javascript">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/Javascript">
 	// I used Two functions here.  Starter idea at: 
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
-	$(".preview" ).on('mouseover',function() {
-		$("#image").text($(this).attr("alt"));
-		$("#image").css('background-image', newValue));
-	})
+	$(document).ready(function() {
 
-	$(".selector").on('events', function(){
-	$(".selector")
+	// 1st argument is the name of the event you're listening to
+	// the 2nd arg is the function tht will be executed when that even happens
+
+		var previewImages = $( ".preview" );
+		var mainImage = $("#image");
+
+		previewImages.on("mouseover", function(event) {
+			console.log("Hovered!");
+
+			var $this = $(this); 
+			// converting an html element into a jquery element so we can access apis on jquery objects
+			var p_alt = $this.attr("alt");
+			var p_src = $this.attr("src");
+			// preview_alt
+
+			// mainImage.attr("alt", "p_alt");
+			// attr sets and gets
+
+			mainImage.text( p_alt); //setting text of main image to preview images alt text
+
+			mainImage.css("background", "url(" + p_src + ")" );
+			//.css gets and sets
 
 
-	})
+		});
+
+		previewImages.on("mouseleave", function(event) {
+			console.log("Not Hovered!");
+			mainImage.text( "Hover over an image below"); 
+			mainImage.css("background", "#8e68ff");
+		});
+		// .on() takes two args; name of event, and function you want to execute
+	});
+
+
+
+
+
 	
 	</script>
 </head>
