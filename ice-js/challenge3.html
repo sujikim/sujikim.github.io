@@ -41,20 +41,20 @@
   <input type="submit" value="Pick your fruit!">
 
   <script>
-    // var radios = document.querySelectorAll( "input[type='radio']" );
-    // radios.forEach( function(elem) {
-    //   elem.setAttribute("name", "fruits");
-    // }) ; 
-// both is a for loop
-    // for (var i= 0; i < radios.lenth; i++) {
-    //   radios[i].setAttribute("name", "fruits");
-    // }
-    // var isChecked = false;
-    // radios.forEach(function (elem) {
-    //   if (elem.checked) {
-    //     isChecked = true;
-    //   }
-    // });
+    var radios = document.querySelectorAll( "input[type='radio']" );
+    radios.forEach( function(elem) {
+      elem.setAttribute("name", "fruits");
+    }) ; 
+both is a for loop
+    for (var i= 0; i < radios.lenth; i++) {
+      radios[i].setAttribute("name", "fruits");
+    }
+    var isChecked = false;
+    radios.forEach(function (elem) {
+      if (elem.checked) {
+        isChecked = true;
+      }
+    });
 
   </script>
 </form>
