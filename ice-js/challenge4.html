@@ -3,12 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Challenge 4</title>
-    <style>
+<!--     <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet"> -->
 
+    <style>
     .errormsg { 
         /*font: Use a cool Google font*/
     	color:red;
-    	display:none; } 
+    	display:none; 
+/*        font-family: 'Mina', sans-serif;*/
     </style>
     
     <script type="text/javascript">
@@ -25,36 +27,37 @@
 
         var isValid = true; 
 
-        if ( !fullname) {
+        if ( !fullname ) {
             console.log( "Full name was not provided!");
             nameerrormsg.style.display = "block";
             isValid = false; 
-            // return true;
         }
         
-        if ( !address) {
+        if ( !address ) {
             console.log( "Address was not provided!");
             addrerrormsg.style.display = "block";
             isValid = false; 
-            // return true;
         }
 
-        return isValid;
+
+        return isValid = false;
 
         }
-        // return false;
+
     	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
-    }  
+    
     </script>
+
 </head>
 <body>
     <h1>Challenge 4</h1>
-	<form action="challenge5.html" onsubmit="return checkForm();">
+	<form action="challenge5.html" onsubmit="return checkForm()">
         <fieldset>
         <legend>Personal details</legend>
           <label for="fullname">Full name: </label>
             <input type="text" name="fullname" id="fullname"><br/>
-            <p class="errormsg" id="nameerrormsg">Please enter your name above!</p>
+            <p class="errormsg" id="nameerrormsg">Please enter your name above!
+            </p>
 
           <label for ="streetaddr"></label>
             Street Address:
