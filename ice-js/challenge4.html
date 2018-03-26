@@ -19,28 +19,26 @@
         var fullname = document.getElementById( "fullname" ).value;
         var address = document.getElementById( "streetaddr" ).value;
 
-        var nameerrormsg = document.getElementById( "nameerrormsg" ).value;
-        var addrerrormsg = document.getElementById( "addrerrormsg" ).value;
-
-        nameerrormsg.style.display = "none";
-        addrerrormsg.style.display = "none";
+        document.getElementById( "nameerrormsg" ).style.display = "none";
+        document.getElementById( "addrerrormsg" ).style.display = "none";
 
         var isValid = true; 
 
         if ( !fullname ) {
-            console.log( "Full name was not provided!");
-            nameerrormsg.style.display = "block";
-            isValid = false; 
+            // console.log( "Full name was not provided!");
+            document.getElementById( "nameerrormsg" ).style.display = "block";
+            // return false; 
+            isValid = false;
         }
         
         if ( !address ) {
-            console.log( "Address was not provided!");
-            addrerrormsg.style.display = "block";
-            isValid = false; 
+            // console.log( "Address was not provided!");
+            document.getElementById( "addrerrormsg" ).style.display = "block";
+            // return false;
+            isValid = false;
         }
 
-
-        return isValid = false;
+            return isValid;
 
         }
 
