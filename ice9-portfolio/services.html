@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kim's Salon</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+<!-- top navigation bar -->
+ <header class="header">
+	  <div class="container">
+			<div class="logo">
+				 <h1><a href="index.html">Kim's</a></h1>
+<!-- 				 <h2>Since 2002<h2> -->
+			</div>
+			<div class="nav">
+				 <nav>
+					  <ul>
+							<li><a href="services.html">SERVICES</a></li>
+							<li><a href="#products">PRODUCTS</a></li>
+							<li><a href="#about">PROMOTIONS</a></li>
+							<li><a href="#contact">CONTACT</a></li>
+					  </ul>
+				 </nav>
+			</div>
+	  </div>
+ </header>
+
+<div class="container">
+	<div class="accordion">
+		<div class="accordion__card">
+			<div class="accordion__title">
+				<p>Haircut Services</p>
+			</div>
+			<div class="accordion__content">
+				You can add plain text... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates libero, a optio possimus porro voluptate vero nisi sed laboriosam. Recusandae.
+			</div>
+		</div>
+		<div class="accordion__card">
+			<div class="accordion__title">
+				<p>Styling Services</p>
+			</div>
+			<div class="accordion__content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates libero, a optio possimus porro voluptate vero nisi sed laboriosam. Recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ipsam!
+			</div>
+		</div>
+		<div class="accordion__card">
+			<div class="accordion__title">
+				<p>Hair Coloring Services</p>
+			</div>
+			<div class="accordion__content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates libero, a optio possimus porro voluptate vero nisi sed laboriosam. Recusandae.
+			</div>
+		</div>
+		<div class="accordion__card">
+			<div class="accordion__title">
+				<p>Designer Style</p>
+			</div>
+			<div class="accordion__content">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam mollitia voluptatum maxime distinctio consectetur ea ducimus, similique, exercitationem maiores commodi repellat odit sint nemo cupiditate sequi laboriosam vero, earum quia quae cumque? Nemo.
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/Javascript">
+	var $titles   = $( ".accordion__title" );
+	var $contents = jQuery( ".accordion__content" ); // notice that `jQuery == $`
+
+
+// Bind click events on the accordion titles:
+$titles.on( "click", function() {
+	// STEP 1. Get the elements to interact with..
+	var $currentTitle   = $( this ); // this title
+	var $currentContent = $currentTitle.next(); // this title's content
+
+	// Side note..
+	// jQuery's slideUp() =~ hide
+	// jQuery's slideDown =~ show
+
+	// STEP 2. Hide every content..
+	$contents.slideUp();
+
+	// EXTRA STEP 2.1
+	// Remove `active` class from the previously
+	// active title. Note that this will also
+	// work if we try to remove the `active` class
+	// from all the titles..
+	$titles.removeClass( "accordion__title--active" );
+
+	// STEP 3. Show the current content only is it was hidden previously..
+	if( $currentContent.css( "display" ) === "none" ) {
+		$currentContent.slideDown();
+
+		// EXTRA STEP 3.1
+		// Add the `active` class to the current title only
+		// if it's content was hidden previously..
+		$currentTitle.addClass( "accordion__title--active" );
+	}
+});
+</script>
+
+<footer class="footer">
+	<p>Kim's Salon - 333 East Church Ann Harbor, MI 48103</p>
+	<p>Hours: Mon-Sat 9am-5pm, Closed Sun (000) 000-0000</p>
+</footer>
+	
+</body>
+
+</html>
