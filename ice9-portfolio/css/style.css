@@ -6,13 +6,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: sailec;
-    color: #eee;
     font-size: 1.4em;
+/*    background:url("../img/santorini.jpg") no-repeat center center;
+    background-size:cover;  */
+    background: #fff;
 }
 
-.header {
-    background: #5D414B;
-}
 
 .container {
     max-width: 800px; /* stretch the width to 100% until 800px */
@@ -38,29 +37,21 @@ body {
     color: #eee; 
 }
 
-/*.header h2 {
-    font-size: 65%;
-    color: #eee;
-    margin: 0;
-    padding-left: 10px;
 
-}*/
-
-/* Bring the logo and nav section side-by-side */
 .logo {
     width: 20%;
     height: 100px;
     display: inline-block;
     vertical-align: top;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .nav {
-    width: 80%;
+/*    width: 80%;*/
     display: inline-block;
     vertical-align: top;
     float: right;
-    margin-top: 9%;
+    margin-top: 5%;
 }
 
 
@@ -85,37 +76,120 @@ div .nav li {
     text-align: center;
 }*/
 
-nav ul li:hover ul { /* Hover on li to reveal the child of li which is ul i.e. the sub-menu */
-    display: block;
+/*nav ul li:hover ul { *//* Hover on li to reveal the child of li which is ul i.e. the sub-menu */
+/*    display: block;
     width: 180px;
-}
+}*/
 
 
 nav ul li a { /* all the anchor tags */
-    color: #ccc;
+    color: #000;
     padding: 10px; /* so we can have enough clickable space */
     line-height: 40px;
     text-decoration: none;
 /*    height: 100px;*/
+    font-size: 65%;
 }
 
 nav ul li a:hover {
     color: #fff;
 }
 
-footer{
-    background: #5D414B;
-    font-size: .6em;
+.footer nav{
     text-align: center;
+    background: #eee;
 }
-footer p{     
+
+div.home-page {
+    background: #fff;
+/*    margin-top: 10px;*/
+}
+.green-rectangle{
+    width:500px;
+    height:700px;
+    background:#E5CBB8;
+    margin-left: 35vh;
+    z-index: 1;
+}
+
+.sunglasses{
+    width:700px; /* you can use % */
+    height: auto;
+    margin-top: -60vh;
+    margin-left: 90vh;
+    z-index: 2;
+}
+
+.palm {
+    width:700px; /* you can use % */
+    height: auto;
+    margin-top: -65vh;
+    margin-left: 18vh;
+    z-index: 3;
+}
+
+.verbiage h1{
+    font-size: 2em;
+    text-align:left;
+    width: 90%;
+    color: #fff;
+    margin-left: 15px;
+    line-height: 1.15;
+}
+.verbiage p{
+    font-size: .9em;
+    text-align: left;
+    width: 75%;
+    color: #fff;
+    margin-left: 10px;
+    margin-bottom: 50px;
+
+}
+.footer{
+    text-align: center;
+    background: #eee
+}
+.footer p{     
     padding-top: .5em;
     padding-bottom: .75em;
+    font-size: .7em;
     margin: 0;
+    text-align: center;
+    background: #eee;
+
+}
+
+.footer nav ul li {
+    display: inline-block;
+    color: #eee;
+    text-align: center;
+}
+
+.salon__pic {
+    max-width: 48%;
+    max-height: 80%;
+    width:auto;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.products__pic {
+    max-width: 60%;
+    max-height: 80%;
+    width:auto;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
 /*accordian*/
+.service__title {
+    text-align: center;
+    font-size:.7em;
+}
 
 .container {
     width: 100%;
@@ -127,6 +201,8 @@ footer p{
 .accordion {
     color: #333;
     background: #ddd;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .accordion__title {
@@ -152,7 +228,15 @@ footer p{
 
 .accordion__content {
     padding: 15px 15px 15px 35px;
-    font-size: 1.2rem;
-    line-height: 1.3;
+    font-size: 1.25rem;
+    line-height: 2;
     display: none;
 }
+
+.accordion-baby h1 {
+    color: #000;
+    text-align: center;
+    font-size: 100%;
+    margin-bottom: 20px;
+}
+
