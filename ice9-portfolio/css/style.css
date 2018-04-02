@@ -92,9 +92,12 @@ nav ul li a { /* all the anchor tags */
 }
 
 nav ul li a:hover {
-    color: #fff;
+    color: #ddd;
 }
 
+.footer nav ul li a:hover {
+    color: #fff;
+}
 .footer nav{
     text-align: center;
     background: #eee;
@@ -116,7 +119,7 @@ div.home-page {
     width:700px; /* you can use % */
     height: auto;
     margin-top: -60vh;
-    margin-left: 90vh;
+    margin-left: 85vh;
     z-index: 2;
 }
 
@@ -124,7 +127,7 @@ div.home-page {
     width:700px; /* you can use % */
     height: auto;
     margin-top: -65vh;
-    margin-left: 18vh;
+    margin-left: 26vh;
     z-index: 3;
 }
 
@@ -184,13 +187,21 @@ div.home-page {
     display: block;
 }
 
+hr {
+    width: 75%;
+}
 
-/*accordian*/
+/*style for accordion*/
 .service__title {
     text-align: center;
     font-size:.7em;
 }
 
+.service__title p {
+    width: 50%;
+/* align-items: center; */
+    margin-left: 22%;
+}
 .container {
     width: 100%;
     margin: 20px auto;
@@ -239,4 +250,77 @@ div.home-page {
     font-size: 100%;
     margin-bottom: 20px;
 }
+
+/*style for contact form*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/*.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}*/
+
+.main-content-crafts{
+    margin-top: 250px;
+}
+/*photo gallery*/
+.crafts{
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+}
+.photo-cell{
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+.photo-cell img {
+    width: 98%;
+    display: block;
+    box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}
+
+/* Style for picture grid */ 
+
+.wrapper {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+    width: 75%;
+}
+
+.wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
 
