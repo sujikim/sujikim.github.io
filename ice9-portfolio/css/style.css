@@ -68,6 +68,8 @@ div .nav li {
     float: left;
 }
 
+
+
 /*nav > ul > li { 
     width: 60px;
     height: 0px;
@@ -119,7 +121,7 @@ div.home-page {
     width:700px; /* you can use % */
     height: auto;
     margin-top: -60vh;
-    margin-left: 85vh;
+    margin-left: 95vh;
     z-index: 2;
 }
 
@@ -132,9 +134,9 @@ div.home-page {
 }
 
 .verbiage h1{
-    font-size: 2em;
+    font-size: 1.75em;
     text-align:left;
-    width: 90%;
+    width: 80%;
     color: #fff;
     margin-left: 15px;
     line-height: 1.15;
@@ -145,7 +147,7 @@ div.home-page {
     width: 75%;
     color: #fff;
     margin-left: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
 
 }
 .footer{
@@ -169,22 +171,18 @@ div.home-page {
 }
 
 .salon__pic {
-    max-width: 48%;
-    max-height: 80%;
-    width:auto;
-    height:auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    text-align: center;
 }
-.products__pic {
-    max-width: 60%;
-    max-height: 80%;
-    width:auto;
-    height:auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
+.salon__pic img{
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+
+.products__pic img {
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 hr {
@@ -192,15 +190,18 @@ hr {
 }
 
 /*style for accordion*/
-.service__title {
-    text-align: center;
-    font-size:.7em;
-}
+
 
 .service__title p {
     width: 50%;
 /* align-items: center; */
     margin-left: 22%;
+    text-align: center;
+}
+
+.service__title {
+    text-align: center;
+    font-size:.7em;
 }
 .container {
     width: 100%;
@@ -214,6 +215,8 @@ hr {
     background: #ddd;
     margin-top: 5%;
     margin-bottom: 5%;
+    border-radius: 12px;
+
 }
 
 .accordion__title {
@@ -264,16 +267,17 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ddd;
+    color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 1%;
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #eee;
 }
 
 /*.container {
@@ -323,4 +327,8 @@ input[type=submit]:hover {
   grid-gap: 10px;
 }
 
+.product-wrapper {
+    text-align: center;
+/*    works for inline and inline block images,  just apply on its parent div */
+}
 
