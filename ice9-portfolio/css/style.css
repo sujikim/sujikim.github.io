@@ -360,6 +360,18 @@ input[type=submit]:hover {
     border-radius: 10px;
     margin-top: 10px;
 }
+
+#extraman {
+    display:none;
+}
+
+#extrafro {
+    display:none;
+}
+
+#extraopen {
+    display:none;
+}
   .imageGrid .tile {
     width: 50%;
 }
