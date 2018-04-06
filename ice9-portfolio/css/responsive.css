@@ -1,0 +1,345 @@
+@media screen and (min-width:650px){
+
+
+}
+
+
+@media screen and (min-width:1000px){
+
+
+.container.logo {
+    background: #444;
+/*    display:flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    color: #eee;
+    margin: 0;
+    padding-left: 10px;
+    line-height: 100px;
+}
+
+.header h1 a {
+    text-decoration: none; 
+    color: #eee; 
+}
+
+
+.logo {
+    width: 20%;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3%;
+}
+
+.nav {
+/*    width: 80%;*/
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin-top: 5%;
+}
+
+
+
+nav ul { /* all the menus that are inside nav */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+div .nav li {
+    display: inline-block;
+    float: left;
+}
+
+nav ul li a { /* all the anchor tags */
+    color: #000;
+    padding: 10px; /* so we can have enough clickable space */
+    line-height: 40px;
+    text-decoration: none;
+/*    height: 100px;*/
+    font-size: 65%;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+.footer nav ul li a:hover {
+    color: #fff;
+}
+.footer nav{
+    text-align: center;
+    background: #eee;
+}
+
+div.home-page {
+    background: #fff;
+/*    margin-top: 10px;*/
+}
+.green-rectangle{
+    width:500px;
+    height:700px;
+    background:#E5CBB8;
+    margin-left: 35vh;
+    z-index: 1;
+}
+
+.sunglasses{
+    width:700px; /* you can use % */
+    height: auto;
+    margin-top: -60vh;
+    margin-left: 95vh;
+    z-index: 2;
+}
+
+.palm {
+    width:700px; /* you can use % */
+    height: auto;
+    margin-top: -65vh;
+    margin-left: 26vh;
+    z-index: 3;
+}
+
+.verbiage h1{
+    font-size: 1.75em;
+    text-align:left;
+    width: 80%;
+    color: #fff;
+    margin-left: 15px;
+    line-height: 1.15;
+}
+.verbiage p{
+    font-size: .9em;
+    text-align: left;
+    width: 75%;
+    color: #fff;
+    margin-left: 10px;
+    margin-bottom: 0;
+
+}
+.footer{
+    text-align: center;
+    background: #eee
+}
+.footer p{     
+    padding-top: .5em;
+    padding-bottom: .75em;
+    font-size: .7em;
+    margin: 0;
+    text-align: center;
+    background: #eee;
+
+}
+
+.footer nav ul li {
+    display: inline-block;
+    color: #eee;
+    text-align: center;
+}
+
+.salon__pic {
+    text-align: center;
+}
+
+.salon__pic img{
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+
+.products__pic img {
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 75%;
+}
+
+/*style for accordion*/
+
+
+.service__title p {
+    width: 50%;
+/* align-items: center; */
+    margin-left: 22%;
+    text-align: center;
+}
+
+.service__title {
+    text-align: center;
+    font-size:.7em;
+}
+.container {
+    width: 100%;
+    margin: 20px auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.accordion {
+    color: #333;
+    background: #ddd;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+
+}
+
+.accordion__title {
+    padding: 15px;
+    cursor: pointer;
+}
+.accordion__title--active,
+.accordion__title:hover {
+    background: #ccc;
+}
+.accordion__title p {
+    margin: 0;
+    font-weight: bold;
+}
+.accordion__title p::before {
+    display: inline-block;
+    width: 20px;
+    content: "+";
+}
+.accordion__title--active p::before {
+    content: "-";
+}
+
+.accordion__content {
+    padding: 15px 15px 15px 35px;
+    font-size: 1.25rem;
+    line-height: 2;
+    display: none;
+}
+
+.accordion-baby h1 {
+    color: #000;
+    text-align: center;
+    font-size: 100%;
+    margin-bottom: 20px;
+}
+
+/*style for contact form*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #ddd;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1%;
+}
+
+input[type=submit]:hover {
+    background-color: #eee;
+}
+
+/*.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}*/
+
+.main-content-crafts{
+    margin-top: 250px;
+}
+/*photo gallery*/
+.crafts{
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+}
+.photo-cell{
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+.photo-cell img {
+    width: 98%;
+    display: block;
+    box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}
+
+
+	.photo-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+
+	div.black {
+		grid-column: 1 / span 4;
+		grid-row: 1 / 2;
+	}
+
+	div.maroon {
+		grid-column: 5 / span 4;
+		grid-row: 1 / 2 ;
+	}
+	div.yellow {
+		grid-column: 1 / span 2;
+	}
+	div.bluish-purple {
+		grid-column: 3 / span 2;
+		display: absolute;
+		bottom: 170px;
+		grid-row: 1fr;}
+
+	div.green {
+		grid-column: 5 / span 4;
+		grid-row: 1fr;}
+	div.light-blue {
+		grid-column: 1 / span 4;
+		grid-row: 3 / span 1;}
+	div.red {
+		grid-column: 5 / span 4;
+		grid-row: 3 / span 1;}
+	}
+
+
+/* Style for picture grid */ 
+
+.wrapper {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+    width: 75%;
+}
+
+.wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.product-wrapper {
+    text-align: center;
+/*    works for inline and inline block images,  just apply on its parent div */
+}
+}
+

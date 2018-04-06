@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -10,12 +11,49 @@ body {
 /*    background:url("../img/santorini.jpg") no-repeat center center;
     background-size:cover;  */
     background: #fff;
+    display: block;
 }
 
+/*mobile-first*/
 
-.container {
-    max-width: 800px; /* stretch the width to 100% until 800px */
-    margin: 0 auto; /* this will only work for a fixed-width div*/
+.header {
+    text-align: center;
+}
+
+.nav {
+    width: 100%;
+}
+.nav ul li {
+    width: 100%;
+    margin-bottom: 2px;
+}
+.nav ul li a{
+    font-size: 1em;
+    color: #fff; 
+    background: #ddd;
+    text-decoration: none;
+    padding: .25em .5em;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.nav ul li a.current-page{
+    color: #eee;
+    font-weight: bold;
+    background: #fff;
+}
+
+.nav ul li a:hover, .nav ul li a:focus{
+    background-color: #eee;
+    color: #000;
+    font-weight: bold;
+}
+.nav ul li a:hover:before, .nav ul li a:focus:before{
+    color: #DDDDDA;
+    padding-right: 4px;
+    position: relative;
+    top: 1px;
 }
 
 .container.logo {
@@ -30,11 +68,6 @@ body {
     margin: 0;
     padding-left: 10px;
     line-height: 100px;
-}
-
-.header h1 a {
-    text-decoration: none; 
-    color: #eee; 
 }
 
 
@@ -55,7 +88,6 @@ body {
 }
 
 
-
 nav ul { /* all the menus that are inside nav */
     list-style: none;
     margin: 0;
@@ -69,32 +101,12 @@ div .nav li {
 }
 
 
-
-/*nav > ul > li { 
-    width: 60px;
-    height: 0px;
-    display: inline-block;
-    vertical-align: top; 
-    text-align: center;
-}*/
-
-/*nav ul li:hover ul { *//* Hover on li to reveal the child of li which is ul i.e. the sub-menu */
-/*    display: block;
-    width: 180px;
-}*/
-
-
 nav ul li a { /* all the anchor tags */
     color: #000;
     padding: 10px; /* so we can have enough clickable space */
     line-height: 40px;
     text-decoration: none;
-/*    height: 100px;*/
     font-size: 65%;
-}
-
-nav ul li a:hover {
-    color: #ddd;
 }
 
 .footer nav ul li a:hover {
@@ -107,48 +119,43 @@ nav ul li a:hover {
 
 div.home-page {
     background: #fff;
-/*    margin-top: 10px;*/
 }
 .green-rectangle{
-    width:500px;
-    height:700px;
+    width:100%;
+    height:80%;
     background:#E5CBB8;
-    margin-left: 35vh;
     z-index: 1;
-}
+    margin-top: 233px;
 
-.sunglasses{
-    width:700px; /* you can use % */
-    height: auto;
-    margin-top: -60vh;
-    margin-left: 95vh;
-    z-index: 2;
-}
-
-.palm {
-    width:700px; /* you can use % */
-    height: auto;
-    margin-top: -65vh;
-    margin-left: 26vh;
-    z-index: 3;
 }
 
 .verbiage h1{
-    font-size: 1.75em;
-    text-align:left;
-    width: 80%;
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 10px;
     color: #fff;
-    margin-left: 15px;
     line-height: 1.15;
+    width: 90%;
+
+
 }
 .verbiage p{
-    font-size: .9em;
-    text-align: left;
-    width: 75%;
+    font-size: .8em;
+    text-align: center;
+    width: 95%;
     color: #fff;
     margin-left: 10px;
-    margin-bottom: 0;
+    margin-top: -10px;
+    margin-bottom: 10px;
 
+}
+
+.sunglasses {
+    display: none;
+}
+
+.palm {
+    display: none;
 }
 .footer{
     text-align: center;
@@ -161,9 +168,7 @@ div.home-page {
     margin: 0;
     text-align: center;
     background: #eee;
-
 }
-
 .footer nav ul li {
     display: inline-block;
     color: #eee;
@@ -175,14 +180,13 @@ div.home-page {
 }
 
 .salon__pic img{
-    border-radius: 12px;
-    margin-bottom: 10px;
+    width: 80%;
+    border-radius: 10px;
 }
 
 
 .products__pic img {
-    border-radius: 20px;
-    margin-bottom: 10px;
+    display: none;
 }
 
 hr {
@@ -193,15 +197,15 @@ hr {
 
 
 .service__title p {
-    width: 50%;
+    width: 90%;
 /* align-items: center; */
-    margin-left: 22%;
+    margin-left: 10px;
     text-align: center;
 }
 
 .service__title {
     text-align: center;
-    font-size:.7em;
+    font-size:.75em;
 }
 .container {
     width: 100%;
@@ -210,13 +214,24 @@ hr {
     margin-bottom: 0;
 }
 
+
 .accordion {
     color: #333;
     background: #ddd;
     margin-top: 5%;
     margin-bottom: 5%;
     border-radius: 12px;
+    text-align: center;
 
+}
+.accordion {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.accord-wrapper {
+    text-align: center;
+    margin-top: -10px;
 }
 
 .accordion__title {
@@ -251,8 +266,10 @@ hr {
     color: #000;
     text-align: center;
     font-size: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: -10px;
 }
+
 
 /*style for contact form*/
 input[type=text], select, textarea {
@@ -280,55 +297,244 @@ input[type=submit]:hover {
     background-color: #eee;
 }
 
-/*.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+
+.imageGrid {
+  line-height: 0;
+}
+.imageGrid .tile {
+  width:33.33%;
+  min-height:20em;
+  line-height: 1.2;
+  display:inline-block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  
+  color:#fff;
+/*  font-family:"sailec",sans-serif;*/
+  text-shadow: 2px 2px 2px #000;
+  cursor: pointer; 
+  cursor: hand;
+}
+
+.imageGrid .tile:before {
+  content: '';
+  background-color: rgba(15,15,15,0.5);
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+.imageGrid .tile:hover:before {
+  display: none;
+}
+
+  .imageGrid .tile {
+    width: 100%
+}
+/****************************************************************************/
+@media screen and (min-width:650px){
+
+.home-page {
+    display: inline;
+    text-align: center;
+    width: 100%;
+}
+
+.verbiage h1 {
+    margin-top: 260px;
+}
+.service__title {
+    text-align: center;
+    font-size:.8em;
+}
+.sunglasses {
+    display: block;
+}
+
+.sunglasses img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+  .imageGrid .tile {
+    width: 50%;
+}
+
+.accordion {
+    text-align: left;
+    width: 70%;
+    display: inline-block;
+}
+.accord-wrapper {
+    text-align: center;
+    margin-top: -30px;
+}
+/****************************************************************************/
+@media screen and (min-width:1000px){
+
+.header {
+    text-align: right;
+}
+.nav-container {
+    width:90%;
+}
+.logo {
+    width: 0%;
+    vertical-align: top;
+    margin-top: 12px;
+}
+/*.nav-container {
+    max-width: 800px;
+    width: 100%;
 }*/
-
-.main-content-crafts{
-    margin-top: 250px;
-}
-/*photo gallery*/
-.crafts{
-    display: block;
-    margin: auto;
-    max-width: 1200px;
-}
-.photo-cell{
-    margin-bottom: 2%;
-    margin-left: 2%;
-}
-.photo-cell img {
-    width: 98%;
-    display: block;
-    box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+.nav {
+    width: 80%;
+    vertical-align: top;
+    margin-top: 32px;
+    text-align: right;
 }
 
-/* Style for picture grid */ 
+.nav ul li {
+    width: 5%;
+    float: right;
+    margin-right: 90px;
+}
 
-.wrapper {
-    border: 2px solid #f76707;
-    border-radius: 5px;
-    background-color: #fff4e6;
+.nav ul li a {
+    font-size: .75em;
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    display: inline;
+}
+
+.nav ul li a:hover, .nav ul li a:focus{
+    background-color: #fff;
+    color: #ddd;
+/*    font-weight: bold;*/
+}
+
+hr {
     width: 75%;
 }
-
-.wrapper > div {
-    border: 2px solid #ffa94d;
-    border-radius: 5px;
-    background-color: #ffd8a8;
-    padding: 1em;
-    color: #d9480f;
+div.home-page {
+    background: #fff;
+/*    margin-top: 10px;*/
 }
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+.green-rectangle{
+    width:500px;
+    height:700px;
+    background:#E5CBB8;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 35vh;
+    z-index: 1;
+}
+
+.green-rectangle h1{
+    margin: auto;
+
+}
+
+.sunglasses {
+    width: 550px;
+    height: auto;
+    margin-left: 700px;
+    margin-top: -460px;
+    z-index: 2;
+    position: relative;
+}
+.sunglasses img{
+    border-radius: 0;
+}
+
+.verbiage h1{
+    font-size: 1.75em;
+    text-align:left;
+    width: 80%;
+    color: #fff;
+    margin-left: 20px;
+    line-height: 1.15;
+    margin-bottom: 30px;
+}
+.verbiage p{
+    font-size: .9em;
+    text-align: left;
+    width: 75%;
+    color: #fff;
+    margin-left: 10px;
+    margin-bottom: 0;
+
+}
+
+.palm {
+    width:600px; 
+    height: auto;
+    margin-top: -600px;
+    margin-left: 200px;
+    z-index: 3;
+}
+
+
+
+.products__pic img{
+    display: inline;
 }
 
 .product-wrapper {
     text-align: center;
-/*    works for inline and inline block images,  just apply on its parent div */
 }
 
+.salon__pic img {
+    width: 35%;
+}
+
+
+.products__pic {
+    text-align: center;
+}
+.service__title {
+    text-align: center;
+}
+
+.accordion {
+    text-align: left;
+    width: 60%;
+    display: inline-block;
+}
+.accord-wrapper {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.accordion-baby h1 {
+    color: #000;
+    text-align: center;
+    font-size: 100%;
+    margin-bottom: 10px;
+    margin-top: -40px;
+}
+
+.contact-container {
+    text-align: left;
+    width: 60%;
+    display: inline-block;
+
+}
+
+.contact-wrapper {
+    text-align: center;
+}
+.footer {
+    margin-top: 10px;
+}
+
+  .imageGrid .tile {
+    width: 33.33%;
+}
+}

@@ -91,7 +91,7 @@ header{
 }
 .top-nav ul li, .menu-icon{
 	border-top: 1px solid #DDDDDA; /*CHANGE*/
-/*	changed this for step 2 red line on nav bar*/
+
 }
 .top-nav ul li a{
 	font-size: 1em;
