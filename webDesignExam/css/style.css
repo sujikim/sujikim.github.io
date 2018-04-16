@@ -2,23 +2,26 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 1.4em;
+    line-height: 0;
     background-image: url("../images/sun-pattern.png");
 }
 
 .images {
 	width: 100%;
-	margin: auto;
-/*	display: inline-block;*/
+	height: 500px;
+	margin: 0;
+	border: 0;
+	display: inline-block;
 }
 
 .imgContainer{
-	width: 50%;
   	padding:5%;
   	border: 5px solid blue;
-  	text-align: center;
   	display: inline-block;
-  margin:0;
+    max-width:450px;
+  max-height:450px;
+  	width: 50%;
+  	text-align: center;
 }
 
 img {
@@ -28,18 +31,10 @@ img {
   height: auto;
   margin:0;
 
-/*  display: inline;*/
+  display: inline;
 }
 
-
-/*.imgContainer1 img{
-	width: 50%;
-	height: 50%;
-	display: inline-block;
+.buttons {
+	margin-top: 50px;
 }
 
-.imgContainer2 img {
-	width: 50%;
-	height: 50%;
-	display: inline-block;
-}*/
