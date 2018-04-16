@@ -1,0 +1,13 @@
+.images {
+	width: 100%;
+}
+.imgContainer{
+	float: left;
+	width: 50%;
+  	padding:5%;
+  	border: 5px solid blue;
+}
+
+/*
+3) Modify the image to have a blue 5px border and 5% padding.  The entire image element should take up 50% of the screen.  They aren't next to each other on Chrome though because of browser settings.*/
+
