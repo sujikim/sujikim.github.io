@@ -18,12 +18,15 @@ body {
   	padding:5%;
   	border: 5px solid blue;
   	display: inline-block;
-    max-width:450px;
-  	max-height:450px;
+/*    max-width:450px;
+  	max-height:450px;*/
   	width: 50%;
   	text-align: center;
 }
 
+img {
+	width:421px;
+}
 /*img {
   max-width:450px;
   max-height:450px;
@@ -33,7 +36,8 @@ body {
   display: inline;
 }*/
 
-.buttons {
+/*.buttons {
 	margin-top: 50px;
 }
 
+*/
