@@ -11,14 +11,22 @@
 <h1> Suji Kim </h1>
 
 <div class="images">
-    <div class="imgContainer">
+    <div class="imgContainer" id="1">
         <img src="./images/examPic.JPG"/>
     </div>
-    <div class="imgContainer">
+    <div class="imgContainer" id="2">
         <img src="./images/UMSI-logo.jpg"/>
     </div>
 </div>
 
+<button onclick="hideImage()">Hide image</button>
+<button onclick="hideImage()">Show image</button>
+
+<script type="text/javascript">
+	function hideImage() {
+    document.getElementById("1").innerHTML.style.display = "none"
+}
+</script>
 	
 </body>
 </html>
