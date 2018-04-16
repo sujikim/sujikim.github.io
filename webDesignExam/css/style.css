@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.4em;
-    background-image: url("/images/sun-pattern.png");
+    background-image: url("../images/sun-pattern.png");
 }
+
 .images {
 	width: 100%;
 	margin: auto;
-	display: inline-block;
+/*	display: inline-block;*/
 }
 
 .imgContainer{
