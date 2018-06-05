@@ -1,11 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
 
 body {
-    margin: 0;
     padding: 0;
     font-family: 'Roboto';
-/*    font-family: -apple-system, BlinkMacSystemFont;*/
-
+    font-size: 24px;
+    line-height: 1.25;
+    background-color: #f9fafb;
+    color: #fff;
 
 }
 
@@ -18,25 +19,20 @@ nav {
     padding: 2px 80px;
     box-sizing: border-box;
     background: #fff;
+    border-bottom: 2px solid #eee;
+    z-index: 1;
 }
-
-/*nav.black {
-    background: rgba(0,0,0,0.8);
-    height: 100px;
-    padding: 10px 100px;
-}*/
 
 nav div.logo {
-    padding: 16px 20px;
     height: 40px;
     float: left;
-    font-size: 28px;
-    transition: .3s;
 }
 
-/*nav.black .logo {
-    color: #fff;
-}*/
+.logo img {
+    width: 30px;
+    height: auto;
+    margin-bottom: -22px;
+}
 
 nav ul {
     list-style: none;
@@ -57,11 +53,39 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #7a7a7a;
-/*    border-bottom: 3px solid black;*/
+    color: #eee;
 }
 
-section.sec1 {
+section {
+    margin: 200px 100px;
+    position: relative;
+    height: 500px;
+}
+
+section div.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+/*    background-color: rgba(39,39,230,0.4);*/
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+section h2 {
+    text-align: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 45vh;
+    font-size: 20px;
+}
+
+section img {
+    width: 200px;
+    height: auto;
+}
+
+/*section.sec1 {
     width: 100%;
     height: 100vh;
     background: url(../img/good-morning.jpg);
@@ -88,11 +112,7 @@ div.content {
 div.main-section {
     align-items: center;
 }
-
-
-
-
-
+*/
 
 
 
