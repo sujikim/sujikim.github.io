@@ -33,6 +33,7 @@ nav div.logo {
     height: 40px;
     float: left;
     margin-left: 28px;
+-webkit-animation-duration: 2s;
 }
 
 .logo img {
@@ -72,6 +73,7 @@ section {
 section.hero {
     margin: 100px;
     background-color: #fff;
+    -webkit-animation-duration: 1.5s;
 
 }
 
