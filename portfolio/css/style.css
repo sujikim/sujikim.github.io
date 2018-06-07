@@ -54,7 +54,8 @@ a:hover {
   display: block;
   position: relative;
   top: 22px;
-  left: 310px;
+  float: right;
+  margin-right: 25px;
   
   z-index: 1;
   
