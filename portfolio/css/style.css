@@ -1,12 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
-
+* {
+    box-sizing: border-box;
+}
 body {
     padding: 0;
-    font-family: 'Roboto';
+    font-family: 'Source Sans Pro','Roboto', 'Montserrat', sans-serif;
+/*    font-family: 'Cabin', sans-serif;*/
     font-size: 24px;
     line-height: 1.25;
-    background-color: #f9fafb;
     color: #fff;
+    background-color: #fff;
+    height: 3000px;
+
 
 }
 
@@ -19,17 +23,20 @@ nav {
     padding: 2px 80px;
     box-sizing: border-box;
     background: #fff;
-    border-bottom: 2px solid #eee;
+    border-bottom: 1px solid #fafafa;
     z-index: 1;
 }
+
+
 
 nav div.logo {
     height: 40px;
     float: left;
+    margin-left: 28px;
 }
 
 .logo img {
-    width: 30px;
+    width: 25px;
     height: auto;
     margin-bottom: -22px;
 }
@@ -39,16 +46,15 @@ nav ul {
     float: right;
     margin: 0;
     display: flex;
-    height: 40px;
+    height: 40px;file:///Users/SujiKim/Documents/GitHub/sujikim.github.io/portfolio/index.html#
 }
 
 nav ul li a {
     line-height: 65px;
     list-style: none;
-    color: #151515;
+    color: #22222a;
     padding: 12px 20px 0px 20px;
     text-decoration: none;
-    transition: .3s;
     font-size: 16px;
 }
 
@@ -56,20 +62,58 @@ nav ul li a:hover {
     color: #eee;
 }
 
+
 section {
-    margin: 200px 100px;
+    margin: 100px 100px;
     position: relative;
     height: 500px;
+}
+
+section.hero {
+    margin: 100px;
+    background-color: #fff;
+
+}
+
+section div.hero {
+    margin-top: 170px;
+    text-align: left;
 }
 
 section div.overlay {
     position: absolute;
     top: 0;
     left: 0;
-/*    background-color: rgba(39,39,230,0.4);*/
-    background-color: #000;
     width: 100%;
     height: 100%;
+}
+
+
+h1 {
+    color: black;
+    border: 0;
+    margin: 0;
+}
+
+h2 {
+    color: black;
+    margin: 0;
+}
+
+
+div.box-1 {
+    background-color: red; 
+
+}
+
+div.box-2 {
+    background-color: blue; 
+
+}
+
+div.box-3 {
+    background-color: pink; 
+
 }
 
 section h2 {
@@ -80,39 +124,7 @@ section h2 {
     font-size: 20px;
 }
 
-section img {
-    width: 200px;
-    height: auto;
-}
 
-/*section.sec1 {
-    width: 100%;
-    height: 100vh;
-    background: url(../img/good-morning.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-content {
-    margin-top: 80px;
-
-}
-
-.content p {
-    width: 900px;
-    margin: 30px auto;
-    text-align: justify;
-    font-size: 20px;
-    line-height: 30px;
-}
-div.content {
-    width: 75%;
-}
-
-div.main-section {
-    align-items: center;
-}
-*/
 
 
 
