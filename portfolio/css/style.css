@@ -19,6 +19,223 @@ nav {
     left: 0;
     width: 100%;
     height: 65px;
+    padding: 0px;
+    background: #fff;
+    border-bottom: 2px solid #fafafa;
+    z-index: 1;
+}
+
+nav div.logo {
+    height: 40px;
+    float: left;
+    margin-left: 28px;
+    -webkit-animation-duration: 2s;
+}
+
+.logo img {
+    width: 25px;
+    margin-bottom: -18px;
+}
+
+a {
+  text-decoration: none;
+  color: #232323;
+  font-size: 30px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: white;
+  border-radius: 5px;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 22px;
+  left: 310px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  position: absolute;  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  margin: -50px 0 0 -150px;
+  height: 400px;
+  width: 300px;
+  padding: 100px 124px 25px 10px;
+  text-align: right;
+
+  
+  background: pink;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform: translate(100%, 0);   
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+}
+
+#menu li{
+  padding: 20px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+section {
+    margin: 100px 100px;
+    position: relative;
+    height: 500px;
+}
+
+section.hero {
+    margin-top: 100px;
+    margin-right: 100px; 
+    margin-bottom: 0; 
+    margin-left: 100px; 
+    height: 300px;
+    background-color: #fff;
+}
+
+section div.hero {
+    margin-top: 170px;
+    text-align: left;
+
+}
+
+section div.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+h1 {
+    color: black;
+    border: 0;
+    margin: 0;
+}
+
+div.overlay{
+    background-color: #eee;
+    display: inline-block;
+    width: 200px;
+}
+
+section h2 {
+    position: sticky;
+    top: 45vh;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.overlay h2 {
+    margin: 100px;
+}
+
+
+/*@media screen and (min-width:650px){}*/
+
+@media screen and (min-width:1000px){
+
+    nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
     padding: 2px 80px;
     box-sizing: border-box;
     background: #fff;
@@ -26,13 +243,11 @@ nav {
     z-index: 1;
 }
 
-
-
 nav div.logo {
     height: 40px;
     float: left;
     margin-left: 28px;
--webkit-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
 }
 
 .logo img {
@@ -46,7 +261,7 @@ nav ul {
     float: right;
     margin: 0;
     display: flex;
-    height: 40px;file:///Users/SujiKim/Documents/GitHub/sujikim.github.io/portfolio/index.html#
+    height: 40px;
 }
 
 nav ul li a {
@@ -100,26 +315,27 @@ h1 {
     margin: 0;
 }
 
-div h2 {
-    color: black;
-    margin: 0;
-}
-
-div.overlay {
+div.overlay{
     background-color: #eee;
     display: inline-block;
     width: 200px;
+    background-image: url("img/pulfa.png");
 }
 
 section h2 {
     position: sticky;
     top: 45vh;
     font-size: 20px;
+    text-align: center;
+    color: black;
 }
 
+.overlay h2 {
+    margin: 100px;
+}
 
-
-
+}
+}
 
 
 
