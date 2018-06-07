@@ -39,12 +39,12 @@ nav div.logo {
 
 a {
   text-decoration: none;
-  color: #232323;
+  color: white;
   font-size: 30px;
 }
 
 a:hover {
-  background-color: #ddd;
+  background-color: ;
   color: white;
   border-radius: 5px;
 }
@@ -83,7 +83,7 @@ a:hover {
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background: black;
   border-radius: 3px;
   
   z-index: 1;
@@ -113,7 +113,7 @@ a:hover {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: white;
 }
 
 /*
@@ -147,7 +147,7 @@ a:hover {
   text-align: right;
 
   
-  background: pink;
+  background: black;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -171,22 +171,21 @@ a:hover {
 }
 
 section {
-    margin: 100px 100px;
+    margin: 0;
     position: relative;
     height: 500px;
 }
 
 section.hero {
-    margin-top: 100px;
-    margin-right: 100px; 
-    margin-bottom: 0; 
-    margin-left: 100px; 
-    height: 300px;
+/*    margin:0;*/
     background-color: #fff;
+    margin-bottom: 40px;
+    padding-left: 10px;
+
 }
 
 section div.hero {
-    margin-top: 170px;
+    margin-top: 100px;
     text-align: left;
 
 }
@@ -205,6 +204,7 @@ h1 {
     color: black;
     border: 0;
     margin: 0;
+    line-height: 1;
 }
 
 div.overlay{
@@ -214,11 +214,12 @@ div.overlay{
 }
 
 section h2 {
-    position: sticky;
-    top: 45vh;
-    font-size: 20px;
-    text-align: center;
-    color: black;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    line-height: 1.75;
+    color: #000;
+    margin-bottom: -35px;
 }
 
 .overlay h2 {
@@ -228,7 +229,7 @@ section h2 {
 
 /*@media screen and (min-width:650px){}*/
 
-@media screen and (min-width:1000px){
+/*@media screen and (min-width:1000px){
 
     nav {
     position: fixed;
@@ -336,7 +337,7 @@ section h2 {
 
 }
 }
-
+*/
 
 
 
