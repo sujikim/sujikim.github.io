@@ -245,10 +245,6 @@ nav {
     z-index: 1;
 }
 
-#menuToggle span {
-    display: none;
-}
-
 nav div.logo {
     height: 40px;
     float: left;
@@ -261,8 +257,12 @@ nav div.logo {
     margin-bottom: -18px;
 }
 
-#menu {
-    background: none;
+#menuToggle span {
+    display: none;
+}
+
+#menuToggle input {
+    display: none;
 }
 
 nav div.menu-items {
@@ -272,6 +272,7 @@ nav div.menu-items {
     display: flex;
     height: 40px;
     margin-top: -90px;
+    margin-right: 250px;
 }
 
 nav ul li a {
@@ -281,6 +282,7 @@ nav ul li a {
     padding: 12px 20px 0px 20px;
     text-decoration: none;
     font-size: 16px;
+    float: right;
 }
 
 nav ul li a:hover {
