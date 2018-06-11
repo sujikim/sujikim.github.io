@@ -255,6 +255,7 @@ nav div.logo {
 .logo img {
     width: 25px;
     margin-bottom: -18px;
+    margin-left: 30px;
 }
 
 #menuToggle span {
@@ -271,8 +272,8 @@ nav div.menu-items {
     margin: 0;
     display: flex;
     height: 40px;
-    margin-top: -90px;
-    margin-right: 250px;
+    margin-top: -104px;
+    margin-right: 270px;
 }
 
 nav ul li a {
@@ -287,6 +288,15 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #eee;
+}
+
+.hero h1 {
+  margin-left: 45px;
+}
+section h2 {
+  padding-right: 8%;
+  margin-left: 45px;
+
 }
 
 }
