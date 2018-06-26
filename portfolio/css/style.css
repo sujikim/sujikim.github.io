@@ -3,7 +3,7 @@
 }
 body {
     padding: 0;
-    height: 3000px;
+    height: auto;
 
     font-family: 'Source Sans Pro','Roboto', 'Montserrat', sans-serif;
     font-size: 24px;
@@ -189,8 +189,9 @@ section.hero {
 }
 
 section div.hero {
-    margin-top: 100px;
+    margin-top: 150px;
     text-align: left;
+
 
 }
 
@@ -219,7 +220,7 @@ div.overlay{
 
 section h2 {
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Open Sans';
     line-height: 1.75;
     color: #000;
@@ -296,8 +297,15 @@ nav ul li a:hover {
 section h2 {
   padding-right: 8%;
   margin-left: 45px;
+  width: 80%;
 
 }
+
+.imageGrid.tile {
+  background-color: black;
+}
+
+
 
 }
 
