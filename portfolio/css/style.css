@@ -266,7 +266,7 @@ footer {
 }
 
 
-/*@media screen and (min-width:650px){}*/
+@media screen and (min-width:650px){}
 
 
 
@@ -296,7 +296,7 @@ nav {
 nav div.logo {
     height: 40px;
     float: left;
-    margin-left: -40px;
+    margin-left: -5px;
     -webkit-animation-duration: 2s;
 }
 
@@ -321,7 +321,7 @@ nav div.menu-items {
     display: flex;
     height: 40px;
     margin-top: -104px;
-    margin-right: 270px;
+    margin-right: 350px;
 }
 
 nav ul li a {
