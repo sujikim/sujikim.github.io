@@ -261,6 +261,17 @@ cursor: pointer;
 opacity: 0.6;
 }
 
+footer {
+  color: black; 
+  font-size: 14px; 
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #efefef;
+  text-align: center;
+}
+
+
+/*@media screen and (min-width:650px){}*/
 
 
 
@@ -270,7 +281,10 @@ opacity: 0.6;
 
 
 
-@media screen and (min-width:650px){
+
+
+
+@media screen and (min-width:1000px){
 
 nav {
     position: fixed;

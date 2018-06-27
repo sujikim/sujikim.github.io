@@ -35,7 +35,7 @@
 			<ul id="menu">
 <!-- 				<div class="menu-items animated fadeInRight"> -->
 				<div class="menu-items">
-				<li><a class="active" href="index.html">Work</a></li>
+				<li><a class="active first" href="index.html">Work</a></li>
 				<li><a href="#" onclick="window.open('Resume.pdf', '_blank'); return false;">Resume</a></li>
 				<li><a href="#">Contact</a></li>
 				</div>
@@ -54,7 +54,7 @@
 
 <div class="vertLine"></div>
 
-<div class="imageGrid">
+<div class="imageGrid second">
 	<div class="box1">
 			<a href="https://www.google.com" ></a>
 		<p style="text-align: center; ">Princeton University Library</p>
@@ -77,13 +77,7 @@
 </div>
 
 <footer>
-	<p style="color: black; font-size: 14px; margin: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;"> Code and Design by Suji Kim © 2018</p>
+	<p> Code and Design by Suji Kim © 2018</p>
 
 </footer>
 
@@ -92,6 +86,17 @@ $(".box1").click(function() {
   window.location = $(this).find("a").attr("href"); 
   return false;
 });
+
+$(".first").click(function() {
+	$('html,body').animate({
+			scrollTop: $(".second").offset().top},
+		'slow');
+
+	$('html, body').animate({
+    scrollTop: $("#target-element").offset().top
+}, 1000);
+});
+
 </script>
 
 </body>
