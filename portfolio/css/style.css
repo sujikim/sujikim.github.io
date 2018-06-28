@@ -195,7 +195,7 @@ section div.hero {
 .box1 {
   grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url('../img/pulfa.jpg');
+  background-image: url('../img/library.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -241,17 +241,11 @@ section div.hero {
 }
 
 .imageGrid > div {
-  background-color: pink;
+/*  background-color: pink;*/
   padding: 1em;
   color: white;
   text-align: center;
   border: 20px solid white;
-}
-
-.imageGrid > div:hover {
-  background-color: #ddd;
-cursor: pointer;
-opacity: 0.6;
 }
 
 footer {
@@ -372,7 +366,7 @@ nav ul li a:hover {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 5;
-  background-image: url('../img/pulfa.jpg');
+  background-image: url('../img/library.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -426,17 +420,17 @@ nav ul li a:hover {
 }
 
 .imageGrid > div {
-  background-color: pink;
+/*  background-color: pink;*/
   padding: 1em;
   color: white;
   text-align: center;
 }
 
-/*.imageGrid > div:hover {
-  background-color: #ddd;
+.imageGrid > div:hover {
+/*  background-color: #ddd;*/
   cursor: pointer;
-  opacity: 0.6;
-}*/
+/*  opacity: 0.6;*/
+}
 
 .fade {
   opacity: 0;
@@ -559,52 +553,46 @@ nav ul li a:hover {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 5;
-  background-image: url('../img/pulfa.jpg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  grid-row-end: 4;
+  background-image: url('../img/library.jpg');
 }
 
 .box2 {
   grid-column-start: 2;
   grid-row-start: 3;
-  grid-row-end: 7;
+  grid-row-end: 6;
   background-image: url('../img/comerica.jpg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
 
 .box3{
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 5;
-  grid-row-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 8;
   background-image: url('../img/briefcase.png');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
 .box4 {
   grid-column-start: 2;
-  grid-row-start: 7;
-  grid-row-end: 11;
+  grid-row-start: 6;
+  grid-row-end: 9;
   background-image: url('../img/platter.jpg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
 .box5 {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 9;
-  grid-row-end: 13;
+  grid-row-start: 8;
+  grid-row-end: 11;
+  background-image: url('../img/platter.jpg');
 }
 
 .box6 {
   grid-column-start: 2;
-  grid-row-start: 11;
-  grid-row-end: 15;
+  grid-row-start: 9;
+  grid-row-end: 13;
+  background-image: url('../img/platter.jpg');
 }
 
 .imageGrid {
@@ -614,18 +602,28 @@ nav ul li a:hover {
 }
 
 .imageGrid > div {
-  background-color: pink;
+/*  background-color: pink;*/
   padding: 1em;
-  color: white;
   text-align: center;
+  position: relative;
 }
 
-.imageGrid > div:hover {
-  background-color: #ddd;
-cursor: pointer;
-opacity: 0.6;
+.imageGrid > div.even p{
+  background: white;
+  opacity: .8;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: left;
 }
 
-
-
+.imageGrid > div.odd p{
+  background: white;
+  opacity: .8;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
 }

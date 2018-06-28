@@ -34,7 +34,7 @@
 <!-- 				<div class="menu-items animated fadeInRight"> -->
 				<div class="menu-items">
 				<li><a class="active" href="index.html">Work</a></li>
-				<li><a href="#" onclick="window.open('Resume.pdf', '_blank'); return false;">Resume</a></li>
+				<li><a href="#" onclick="window.open('SujiKim-Resume.pdf', '_blank'); return false;">Resume</a></li>
 				<li><a href="#bottom">Contact</a></li>
 				</div>
 			</ul>
@@ -52,25 +52,25 @@
 
 <div class="vertLine"></div>
 
-<div class="imageGrid second">
-	<div class="box1 fade">
-			<a href="https://www.google.com" ></a>
-		<p style="text-align: center; ">Princeton University Library</p>
+<div class="imageGrid">
+	<div class="box1 fade odd">
+<!-- 			<a href="https://www.google.com" ></a> -->
+		<p><b>Princeton University Library</b> <br>Website Redesign</p>
 	</div>
-	<div class="box2 fade">
-		<p style="text-align: center; ">Comerica Bank <br>Technology and Strategy Intern</p>
+	<div class="box2 fade even">
+		<p><b>Comerica Bank</b> <br>Technology & Strategy Intern </p>
 	</div>
-	<div class="box3 fade">
-		<p style="text-align: center; ">briefcase</p>
+	<div class="box3 fade odd">
+		<p><b>Briefcase Mobile App</b> <br>Streamline your job interview process </p>
 	</div>
-	<div class="box4 fade">Four
-		<p style="text-align: center; ">platter</p>
+	<div class="box4 fade even">
+		<p><b>Platter Mobile App</b> <br>Discover new restaurants</p>
 	</div>
-	<div class="box5 fade">Five
-		<p style="text-align: center; ">AccessSeoul</p>
+	<div class="box5 fade odd">
+		<p><b>AccessSeoul App</b> <br>Encouraging accessible travel</p>
 	</div>
-	<div class="box6 fade">Six
-		<p style="text-align: center; ">Daily UI Challenge</p>
+	<div class="box6 fade even">
+		<p><b>Daily UI Challenge</b> <br>Personal Project to improve UI skills</p>
 	</div>
 </div>
 
@@ -100,22 +100,22 @@ $(document).ready(function() {
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
                 
-                $(this).animate({'opacity':'1'},500);         
+                $(this).animate({'opacity':'1'},400);         
             } 
         }); 
     });
     
 });
 
-$('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-});
+// $('a[href^="#"]').on('click', function(event) {
+//     var target = $(this.getAttribute('href'));
+//     if( target.length ) {
+//         event.preventDefault();
+//         $('html, body').stop().animate({
+//             scrollTop: target.offset().top
+//         }, 1000);
+//     }
+// });
 
 </script>
 
