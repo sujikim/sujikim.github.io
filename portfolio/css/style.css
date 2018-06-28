@@ -4,12 +4,10 @@
 body {
     padding: 0;
     height: auto;
-
-    font-family: 'Source Sans Pro','Roboto', 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans';
     font-size: 24px;
     line-height: 1.25;
     color: #fff;
-
     background-color: #fff;
 }
 
@@ -266,7 +264,193 @@ footer {
 }
 
 
-@media screen and (min-width:650px){}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:650px){
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  padding: 2px 80px;
+  background: #fff;
+  border-bottom: 1px solid #fafafa;
+  z-index: 1;
+}
+
+nav div.logo {
+  height: 40px;
+  float: left;
+  margin-left: -55px;
+  -webkit-animation-duration: 2s;
+}
+
+.logo img {
+  width: 25px;
+  margin-bottom: -18px;
+  margin-left: 30px;
+}
+
+#menuToggle span {
+  display: none;
+}
+
+#menuToggle input {
+  display: none;
+}
+
+nav div.menu-items {
+  list-style: none;
+  float: right;
+  margin: 0;
+  display: flex;
+  height: 40px;
+  margin-top: -104px;
+  margin-right: 260px;
+}
+
+nav ul li a {
+  line-height: 65px;
+  list-style: none;
+  color: #22222a;
+  padding: 12px 20px 0px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  float: right;
+}
+
+nav ul li a:hover {
+  color: #eee;
+}
+
+.hero {
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  color: black;
+  text-align: center;
+  margin: 0;
+
+}
+
+.hero h2 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+
+.vertLine {
+  border-right: 1px solid #ddd;
+  width: 50%;
+  height: 330px;
+}
+
+.imageGrid {
+  display: -webkit-grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 150px;
+  grid-gap: 40px;
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-image: url('../img/pulfa.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.box2 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  background-image: url('../img/comerica.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+
+.box3{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  background-image: url('../img/briefcase.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.box4 {
+  grid-column-start: 2;
+  grid-row-start: 7;
+  grid-row-end: 11;
+  background-image: url('../img/platter.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.box5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 9;
+  grid-row-end: 13;
+}
+
+.box6 {
+  grid-column-start: 2;
+  grid-row-start: 11;
+  grid-row-end: 15;
+}
+
+.imageGrid {
+  border: 60px solid white;
+  border-top: 0;
+  background-color: white;
+}
+
+.imageGrid > div {
+  background-color: pink;
+  padding: 1em;
+  color: white;
+  text-align: center;
+}
+
+/*.imageGrid > div:hover {
+  background-color: #ddd;
+  cursor: pointer;
+  opacity: 0.6;
+}*/
+
+.fade {
+  opacity: 0;
+}
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -282,66 +466,68 @@ footer {
 @media screen and (min-width:1000px){
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 65px;
-    padding: 2px 80px;
-    background: #fff;
-    border-bottom: 1px solid #fafafa;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  padding: 2px 80px;
+  background: #fff;
+  border-bottom: 1px solid #fafafa;
+  z-index: 1;
 }
 
 nav div.logo {
-    height: 40px;
-    float: left;
-    margin-left: -5px;
-    -webkit-animation-duration: 2s;
+  height: 40px;
+  float: left;
+  margin-left: -5px;
+  -webkit-animation-duration: 2s;
 }
 
 .logo img {
-    width: 25px;
-    margin-bottom: -18px;
-    margin-left: 30px;
+  width: 25px;
+  margin-bottom: -18px;
+  margin-left: 30px;
 }
 
 #menuToggle span {
-    display: none;
+  display: none;
 }
 
 #menuToggle input {
-    display: none;
+  display: none;
 }
 
 nav div.menu-items {
-    list-style: none;
-    float: right;
-    margin: 0;
-    display: flex;
-    height: 40px;
-    margin-top: -104px;
-    margin-right: 350px;
+  list-style: none;
+  float: right;
+  margin: 0;
+  display: flex;
+  height: 40px;
+  margin-top: -104px;
+  margin-right: 350px;
 }
 
 nav ul li a {
-    line-height: 65px;
-    list-style: none;
-    color: #22222a;
-    padding: 12px 20px 0px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    float: right;
+  line-height: 65px;
+  list-style: none;
+  color: #22222a;
+  padding: 12px 20px 0px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  float: right;
 }
 
 nav ul li a:hover {
-    color: #eee;
+  color: #eee;
 }
 
 .hero {
   margin-right: 8%;
   margin-left: 8%;
+  margin-bottom: 25px;
 }
+
 .hero h1 {
   color: black;
   text-align: center;
@@ -358,7 +544,7 @@ nav ul li a:hover {
 .vertLine {
   border-right: 1px solid #ddd;
   width: 50%;
-  height: 330px;
+  height: 400px;
 }
 
 .imageGrid {
@@ -443,116 +629,3 @@ opacity: 0.6;
 
 
 }
-
-/*@media screen and (min-width:1000px){
-
-    nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 65px;
-    padding: 2px 80px;
-    box-sizing: border-box;
-    background: #fff;
-    border-bottom: 1px solid #fafafa;
-    z-index: 1;
-}
-
-nav div.logo {
-    height: 40px;
-    float: left;
-    margin-left: 28px;
-    -webkit-animation-duration: 2s;
-}
-
-.logo img {
-    width: 25px;
-    height: auto;
-    margin-bottom: -22px;
-}
-
-nav ul {
-    list-style: none;
-    float: right;
-    margin: 0;
-    display: flex;
-    height: 40px;
-}
-
-nav ul li a {
-    line-height: 65px;
-    list-style: none;
-    color: #22222a;
-    padding: 12px 20px 0px 20px;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-nav ul li a:hover {
-    color: #eee;
-}
-
-
-section {
-    margin: 100px 100px;
-    position: relative;
-    height: 500px;
-}
-
-section.hero {
-    margin-top: 100px;
-    margin-right: 100px; 
-    margin-bottom: 0; 
-    margin-left: 100px; 
-    height: 300px;
-    background-color: #fff;
-}
-
-section div.hero {
-    margin-top: 170px;
-    text-align: left;
-
-}
-
-section div.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-
-h1 {
-    color: black;
-    border: 0;
-    margin: 0;
-}
-
-div.overlay{
-    background-color: #eee;
-    display: inline-block;
-    width: 200px;
-    background-image: url("img/pulfa.png");
-}
-
-section h2 {
-    position: sticky;
-    top: 45vh;
-    font-size: 20px;
-    text-align: center;
-    color: black;
-}
-
-.overlay h2 {
-    margin: 100px;
-}
-
-}
-}
-*/
-
-
-

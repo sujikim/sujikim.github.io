@@ -11,9 +11,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 
 </head>
@@ -37,7 +35,7 @@
 				<div class="menu-items">
 				<li><a class="active" href="index.html">Work</a></li>
 				<li><a href="#" onclick="window.open('Resume.pdf', '_blank'); return false;">Resume</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#bottom">Contact</a></li>
 				</div>
 			</ul>
 		</div>
@@ -48,43 +46,75 @@
 	<div class="hero">
 	<h1 style= "font-size: 50px; 
 	text-transform: uppercase; ">UX / Product Designer.</h1>
-	<h2> Hello, and welcome! <b>I'm Suji, a product designer</b> seeking full-time opportunites starting Summer 2018. Standing behind the idea that things can always be improved, I am constantly learning and growing, so you can expect that working with me is going to be a fun and exciting ride! 😁</h2>
+	<h2> Hello, and welcome! I'm Suji, a product designer seeking full-time opportunites starting Summer 2018. Standing behind the idea that things can always be improved, I am constantly learning and growing, so you can expect that working with me is going to be a fun and exciting ride! 😁</h2>
 	</div>
 </section>
 
 <div class="vertLine"></div>
 
 <div class="imageGrid second">
-	<div class="box1">
+	<div class="box1 fade">
 			<a href="https://www.google.com" ></a>
 		<p style="text-align: center; ">Princeton University Library</p>
 	</div>
-	<div class="box2">
+	<div class="box2 fade">
 		<p style="text-align: center; ">Comerica Bank <br>Technology and Strategy Intern</p>
 	</div>
-	<div class="box3">
+	<div class="box3 fade">
 		<p style="text-align: center; ">briefcase</p>
 	</div>
-	<div class="box4">Four
+	<div class="box4 fade">Four
 		<p style="text-align: center; ">platter</p>
 	</div>
-	<div class="box5">Five
+	<div class="box5 fade">Five
 		<p style="text-align: center; ">AccessSeoul</p>
 	</div>
-	<div class="box6">Six
+	<div class="box6 fade">Six
 		<p style="text-align: center; ">Daily UI Challenge</p>
 	</div>
 </div>
 
 <footer>
 	<p> Code and Design by Suji Kim © 2018</p>
-
 </footer>
 
+
 <script>
+
 $(".box1").click(function() {
   window.location = $(this).find("a").attr("href"); 
   return false;
+});
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.fade').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);         
+            } 
+        }); 
+    });
+    
+});
+
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
 });
 
 </script>
