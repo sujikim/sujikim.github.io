@@ -187,6 +187,10 @@ section div.hero {
   color: #000;
 }
 
+.mobile {
+  display: none;
+}
+
 .imageGrid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
