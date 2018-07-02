@@ -33,7 +33,7 @@
 			<ul id="menu">
 <!-- 				<div class="menu-items animated fadeInRight"> -->
 				<div class="menu-items">
-				<li><a class="active" href="index.html">Work</a></li>
+				<li><a class="scroll" href="#work">Work</a></li>
 				<li><a href="#" onclick="window.open('SujiKim-Resume.pdf', '_blank'); return false;">Resume</a></li>
 				<li><a href="mailto:sujikim@umich.edu?Subject="target="_top">Contact</a></li>
 				</div>
@@ -51,7 +51,7 @@
 
 <div class="vertLine"></div>
 
-<div class="imageGrid">
+<div class="imageGrid scroll" id="work">
 	<div class="box1 fade odd">
 <!-- 			<a href="https://www.google.com" ></a> -->
 		<p><b>Princeton University Library</b> <br>Website Redesign</p>
@@ -80,41 +80,21 @@
 
 <script>
 
-$(".box1").click(function() {
-  window.location = $(this).find("a").attr("href"); 
-  return false;
-});
 
 $(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.fade').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},400);         
-            } 
-        }); 
-    });
-    
+    var scrollLink = $('.scroll');
+   
+    // Smooth scrolling
+
+    scrollLink.click(function(e) {
+    	e.preventDefault();
+    	$('body,html').animate({
+    		scrollTop: $(this.hash).offset().top
+    	}, 1000 )
+    })
+  
 });
 
-// $('a[href^="#"]').on('click', function(event) {
-//     var target = $(this.getAttribute('href'));
-//     if( target.length ) {
-//         event.preventDefault();
-//         $('html, body').stop().animate({
-//             scrollTop: target.offset().top
-//         }, 1000);
-//     }
-// });
 
 </script>
 
