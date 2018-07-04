@@ -308,7 +308,8 @@ div.image-band {
   text-decoration: none;
 }
 
-}
+
+
 
 
 
@@ -515,7 +516,7 @@ nav ul li a:hover {
 
 
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:1000px) {
 
 nav {
   position: fixed;
@@ -598,7 +599,7 @@ nav ul li a:hover {
   text-align: left;
   font-size: 150%;
   line-height: 1.5;
-  padding-right: 7%; 
+  padding-right: 2%; 
   margin-top: 2%;
 }
 
@@ -720,3 +721,4 @@ div.image-band {
 }
 
 }
+
