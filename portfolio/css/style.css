@@ -37,8 +37,8 @@ nav div.logo {
 
 a {
   text-decoration: none;
-  color: white;
-  font-size: 30px;
+/*  color: white;
+  font-size: 30px;*/
 }
 
 a:hover {
@@ -279,22 +279,29 @@ footer {
 
 
 section.intro {
-  margin: 15% 15% 0% 15%;
+  margin: 30% 10% 30% 10%;
   display: block;
 }
 
 p.intro {
-  color: black;
   line-height: 1.5em;
+  font-size: 70%;
+  color: #354147;
+
 }
 
 #pulfa {
     background-image: url("../img/lib.jpg");
 }
 
+.pulfa-img {
+  width: 200px;
+  height: auto;
+}
+
 
 div.image-band {
-  height: 400px;
+  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -311,7 +318,7 @@ div.image-band {
 
 
 
-
+}
 
 
 
@@ -703,13 +710,18 @@ section.intro {
 }
 
 p.intro {
-  color: black;
+  font-size: 100%;
   line-height: 1.75em;
   color: #354147;
 }
 
 #pulfa {
     background-image: url("../img/lib.jpg");
+}
+
+.pulfa-img {
+  width: 300px;
+  height: auto;
 }
 
 
@@ -727,6 +739,35 @@ div.image-band {
   position: relative;
   color: #fff;
   text-decoration: none;
+}
+
+section.content1 {
+  margin: 10% 20% 0% 20%;
+  display: block;
+  height: 125px;
+
+}
+
+.role-header {
+  color: #354147;
+  font-size: 60%;
+  text-transform: uppercase;
+}
+
+p.role-desc {
+  font-size: 80%;
+  color: #5F6C72;
+}
+
+section.content1 p a {
+  color: red;
+  size: 80%;
+}
+
+section.content2 {
+  margin: 0% 20% 15% 20%;
+  display: block;
+
 }
 
 }
