@@ -599,7 +599,7 @@ nav ul li a:hover {
   text-align: left;
   font-size: 150%;
   line-height: 1.5;
-  padding-right: 2%; 
+/*  padding-right: 2%; */
   margin-top: 2%;
 }
 
@@ -617,13 +617,22 @@ nav ul li a:hover {
   grid-gap: 40px;
 }
 
+#box1 {
+  background-image: url("../img/pulfa.png")
+}
+
 .box1 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 4;
-  background: #426A50;
-/*  background-image: url('../img/library.jpg');*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
 }
 
 .box2 {
@@ -689,13 +698,14 @@ nav ul li a:hover {
 }
 
 section.intro {
-  margin: 15% 15% 10% 15%;
+  margin: 15% 20% 15% 20%;
   display: block;
 }
 
 p.intro {
   color: black;
-  line-height: 1.5em;
+  line-height: 1.75em;
+  color: #354147;
 }
 
 #pulfa {
@@ -705,7 +715,6 @@ p.intro {
 
 div.image-band {
   height: 400px;
-  background-color: pink;
   display:block;
   background-size: cover;
   background-repeat: no-repeat;
