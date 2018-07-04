@@ -278,7 +278,37 @@ footer {
 }
 
 
+section.intro {
+  margin: 15% 15% 0% 15%;
+  display: block;
+}
 
+p.intro {
+  color: black;
+  line-height: 1.5em;
+}
+
+#pulfa {
+    background-image: url("../img/lib.jpg");
+}
+
+
+div.image-band {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: auto;
+  box-sizing: border-box;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+}
 
 
 
@@ -591,7 +621,7 @@ nav ul li a:hover {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 4;
-  background: pink;
+  background: #426A50;
 /*  background-image: url('../img/library.jpg');*/
 }
 
@@ -600,7 +630,7 @@ nav ul li a:hover {
   grid-row-start: 3;
   grid-row-end: 6;
 /*  background-image: url('../img/comerica.jpg');*/
-  background: pink;
+  background: #88B9DA;
 }
 
 
@@ -609,7 +639,7 @@ nav ul li a:hover {
   grid-column-end: 2;
   grid-row-start: 4;
   grid-row-end: 7;
-  background: pink;
+  background: #DE6248;
 /*  background-image: url('../img/briefcase.png');*/
 }
 
@@ -617,7 +647,7 @@ nav ul li a:hover {
   grid-column-start: 2;
   grid-row-start: 6;
   grid-row-end: 9;
-  background: pink;
+  background: #F8D584;
 /*  background-image: url('../img/platter.jpg');*/
 }
 
@@ -626,7 +656,7 @@ nav ul li a:hover {
   grid-column-end: 2;
   grid-row-start: 7;
   grid-row-end: 10;
-  background: pink;
+  background: #DCDDDE;
 /*  background-image: url('../img/platter.jpg');*/
 }
 
@@ -634,7 +664,7 @@ nav ul li a:hover {
   grid-column-start: 2;
   grid-row-start: 9;
   grid-row-end: 13;
-  background: pink;
+  background: #426A50;
 /*  background-image: url('../img/platter.jpg');*/
 }
 
@@ -650,22 +680,43 @@ nav ul li a:hover {
 }
 
 .imageGrid div p {
-  text-align: center;
-}
-
-
-.imageGrid > div.even p{
   background: white;
   opacity: .8;
   color: black;
   left: 0;
-  text-align: center;
+  text-align: left;
 }
 
-.imageGrid > div.odd p{
-  background: white;
-  opacity: .8;
+section.intro {
+  margin: 15% 15% 10% 15%;
+  display: block;
+}
+
+p.intro {
   color: black;
+  line-height: 1.5em;
+}
+
+#pulfa {
+    background-image: url("../img/lib.jpg");
+}
+
+
+div.image-band {
+  height: 400px;
+  background-color: pink;
+  display:block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: auto;
+  box-sizing: border-box;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
 }
 
 }
